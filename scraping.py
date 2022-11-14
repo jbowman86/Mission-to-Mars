@@ -150,13 +150,8 @@ def hemispheres(browser):
     #browser.quit() #<- needs to be removed when converted to .py
     return hemisphere_image_urls
 
-### TESTING DEBUGGING CODE ###
-#executable_path = {'executable_path': ChromeDriverManager().install()}
-#browser = Browser('chrome', **executable_path, headless=False)
 
-# print(hemispheres(browser))
-# test = {
-#     "poop":hemispheres(browser),
-#     "chungus":"nancy"
-#     }
-# print(scrape_all())
+if __name__ == "__main__":
+
+    # If running as script, print scraped data
+    print(scrape_all()
